@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #faf4f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2vw 4vw;
+
+}
+#main #logo{
+    height: 100%;
+    width: 50%;
+    
+}
+#logo img{
+    height: 40%;
+    width: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+#main #form_body{
+    height: 100%;
+    width: 50%;
+    background-color: #fff;
+    padding: 2vw;
+    border-radius: 15px;
+}
+#form_body h3{
+    font-size: 1.5vw;
+    font-family: monument;
+    font-weight: 300;
+    line-height: 3vw;
+}
+#form_body h2{
+    font-size: 1.9vw;
+    font-family: monument;
+    font-weight: 600;
+    color: rgb(63, 63, 209);
+    line-height: 2.5vw;
+}
+
+#login_btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.1vw;
+    margin-top: 2vw;
+    height: 10vw;
+    padding-top: 0.3vw;
+    /* border: 1px solid black; */
+}
+.btns{ 
+    height: 50px ;
+    width: 100%;
+    /* border: 1px solid rgb(201, 198, 198); */
+    box-shadow: 0px 4px 8px -2px rgba(9, 30, 66, 0.25), 0px 0px 0px 1px rgba(9, 30, 66, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+.btns img{
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
+    object-position: center;
+}
+.btns p{
+    font-size: 1.5;
+    font-family: gilroy;
+    font-family: 600;
+}
+
+#or{
+    width: 100%;
+    margin-top: 1vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#or h4{
+    font-size: 1vw;
+    font-family: gilroy;
+    color: grey;
+    font-weight: 600;
+}
+h4::before{
+    content:"___________________________";
+}
+h4::after{
+    content:"___________________________";
+}
+#form_inp{
+    margin-top: 1vw;
+}
+.inp_field{
+    height: 3.5vw;
+    width: 100%;
+    margin-top: 1vw;
+}
+
+input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(220, 212, 212);
+    font-size: 1.2vw;
+    color: rgb(27, 26, 26);
+    padding: 0 3vw;
+}
+#text_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+    margin-top: 1vw;
+}
+.content{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 10vw;
+    gap: 1vw;
+}
+.content span{
+    color: grey;
+}
+#logins{
+    width: 100%;
+    height: 4vw;
+    margin-top: 1vw ;
+}
+#logins button{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: rgb(70, 70, 216);;
+    border-radius: 5px;
+    font-size: 1.5vw;
+    color: white;
+}
+
+#signup p{
+    font-family: gilroy;
+    margin-top: 8px;
+    color: gray;
+}
+#signup p span{
+    text-decoration: underline;
+}
+#signup p span:hover{
+    color: black;
+    cursor: pointer;
+}
+
+
+
+/* Existing styles... */
+/* Existing styles... */
+
+#logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 1024px) {
+    #main {
+        flex-direction: column;
+        align-items: center;
+        padding: 2vw;
+    }
+
+    #main #logo,
+    #main #form_body {
+        width: 100%;
+        max-width: 600px; /* Add a maximum width for better scaling */
+    }
+
+    #logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2vw;
+    }
+
+    #logo img {
+        height: auto;
+        width: 50%;
+    }
+
+    #form_body {
+        padding: 4vw;
+    }
+
+    #form_body h3 {
+        font-size: 4vw;
+        line-height: 6vw;
+    }
+
+    #form_body h2 {
+        font-size: 5vw;
+        line-height: 7vw;
+    }
+
+    .btns {
+        height: 40px;
+    }
+
+    .btns img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .btns p {
+        font-size: 3vw;
+    }
+
+    #or h4 {
+        font-size: 3vw;
+    }
+
+    .inp_field {
+        height: 8vw;
+    }
+
+    input {
+        font-size: 4vw;
+        padding: 0 2vw;
+    }
+
+    .content {
+        width: 20vw;
+        gap: 2vw;
+    }
+
+    #logins {
+        height: 10vw;
+    }
+
+    #logins button {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #form_body {
+        padding: 6vw;
+    }
+
+    #form_body h3 {
+        font-size: 5vw;
+        line-height: 7vw;
+    }
+
+    #form_body h2 {
+        font-size: 6vw;
+        line-height: 8vw;
+    }
+
+    .btns p {
+        font-size: 4vw;
+    }
+
+    #or h4 {
+        font-size: 4vw;
+    }
+
+    .inp_field {
+        height: 10vw;
+    }
+
+    input {
+        font-size: 5vw;
+        padding: 0 3vw;
+    }
+
+    .content {
+        width: 30vw;
+        gap: 3vw;
+    }
+
+    #logins {
+        height: 12vw;
+    }
+
+    #logins button {
+        font-size: 5vw;
+    }
+}
